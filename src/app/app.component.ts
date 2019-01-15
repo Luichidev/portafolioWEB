@@ -15,7 +15,8 @@ export class AppComponent implements OnInit, OnDestroy{
   constructor(private router : Router) { }
 
   ngOnInit() {
-    this.router.events.pipe(
+    this.subscription = this.router.events
+    .pipe(
       filter( event => event instanceof NavigationEnd)
     )
     .subscribe(() => window.scrollTo(0,0))

@@ -1,0 +1,14 @@
+.menu__link:hover {
+  background-color: var(--mainColor);
+  border-radius: 5px;
+}
+
+.menu__link--select {
+  background-color: var(--mainColor);
+  border-radius: 5px;
+}
+
+.logo {
+  width: 120px;
+  max-width: 300px;
+}

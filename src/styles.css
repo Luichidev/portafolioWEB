@@ -1,1 +1,114 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --mainColor: #4A86E8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sarabun', sans-serif;
+  margin: 0;
+  background-color: var(--bgColor);
+}
+
+/* -------------Estilos base------------- */
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-gap: 10px;
+}
+
+.black-shadow {
+  text-shadow: 5px 5px 10px black;
+}
+
+/* -----Estilos del navbar custom scroll --- */
+.top-nav-collapse {
+  background-color: #000 !important;
+}
+
+/* -------------Estilos del banner------------- */
+.banner {
+  position: relative;
+  margin-top: -100px;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 10;
+  top: 0;
+}
+
+.banner__img {
+  object-fit: cover;
+}
+
+/* -------------Estilos de laportada------------- */
+.portada {
+  background: url(./assets/img/portada.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+.portada::before {
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, var(--mainColor), #AD55C1);
+  opacity: .5;
+}
+
+
+/* -------------Estilos responsive------------- */
+@media screen and (min-width:480px) {
+  .banner {
+    margin-top: -200px;
+    z-index: -10;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .banner {
+    margin-top: -250px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .banner {
+    margin-top: -300px;
+  }
+}
+
+@media screen and (min-width:1600px) {
+  .banner {
+    margin-top: -900px;
+  }
+}

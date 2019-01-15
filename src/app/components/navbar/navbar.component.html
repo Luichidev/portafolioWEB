@@ -1,45 +1,78 @@
-<!--Main Navigation-->
-<header>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-    <a class="navbar-brand" routerLink="/"><img src="assets/img/logo.png" class="img-thumbnail"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/" routerLinkActive="active">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/formacion" routerLinkActive="active">Formación</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/aptitudes" routerLinkActive="active">Aptitudes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/galeria" routerLinkActive="active">Galeria</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/proyectos" routerLinkActive="active">Proyectos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/contacto" routerLinkActive="active">Contácteme</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav nav-flex-icons">
-        <li class="nav-item">
-          <a class="nav-link"><i class="fa fa-facebook"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"><i class="fa fa-twitter"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"><i class="fa fa-instagram"></i></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-</header>
-<!--Main Navigation-->
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark rgba-black-strong scrolling-navbar fixed-top">
+  <mdb-navbar-brand>
+    <a routerLink="/" class="navbar-brand"><img src="assets/img/logoluis.png" class="logo"></a>
+  </mdb-navbar-brand>
+  <links>
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto rounded">
+      <li class="nav-item">
+        <a class="nav-link waves-light menu__link"
+        mdbWavesEffect
+        routerLink="/"
+        routerLinkActive="menu__link--select"
+        [routerLinkActiveOptions]="{exact:true}"
+        >Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light menu__link"
+        mdbWavesEffect
+        routerLink="/formacion"
+        routerLinkActive="menu__link--select"
+        [routerLinkActiveOptions]="{exact:true}"
+        >Formación</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light menu__link"
+        mdbWavesEffect
+        routerLink="/aptitudes"
+        routerLinkActive="menu__link--select"
+        [routerLinkActiveOptions]="{exact:true}"
+        >Aptitudes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light menu__link"
+        mdbWavesEffect
+        routerLink="/galeria"
+        routerLinkActive="menu__link--select"
+        [routerLinkActiveOptions]="{exact:true}"
+        >Galería</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light menu__link"
+        mdbWavesEffect
+        routerLink="/proyectos"
+        routerLinkActive="menu__link--select"
+        [routerLinkActiveOptions]="{exact:true}"
+        >Proyectos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light menu__link"
+        mdbWavesEffect
+        routerLink="/contacto"
+        routerLinkActive="menu__link--select"
+        [routerLinkActiveOptions]="{exact:true}"
+        >Contacto</a>
+      </li>
+    </ul>
+    <!-- Links -->
+    <!-- social icon -->
+    <ul class="navbar-nav nav-flex-icons">
+      <li class="nav-item waves-light" mdbRippleRadius>
+        <a href="http://facebook.com/LuisTheThunder/" target="_blank" class="nav-link"><mdb-icon icon="facebook" size="2x" class="white-text"></mdb-icon></a>
+      </li>
+      <li class="nav-item waves-light" mdbRippleRadius>
+        <a href="https://api.whatsapp.com/send?phone=+34663411621" target="_blank" class="nav-link"><mdb-icon icon="whatsapp" size="2x" class="white-text"></mdb-icon></a>
+      </li>
+      <li class="nav-item waves-light" mdbRippleRadius>
+        <a href="https://twitter.com/@luichiarana" target="_blank" class="nav-link"><mdb-icon icon="twitter" size="2x" class="white-text"></mdb-icon></a>
+      </li>
+      <li class="nav-item waves-light" mdbRippleRadius>
+        <a href="https://www.instagram.com/disconluis/" target="_blank" class="nav-link"><mdb-icon icon="instagram" size="2x" class="white-text"></mdb-icon></a>
+      </li>
+    </ul>
+    <!-- social icon -->
+  </links>
+  <!-- Collapsible content -->
+</mdb-navbar>
+<!--/.Navbar-->
