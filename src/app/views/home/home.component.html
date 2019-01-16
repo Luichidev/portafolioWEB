@@ -1,6 +1,57 @@
+<div mdbModal #frame="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true" style="overflow-y: auto">
+  <div class="modal-dialog modal-notify modal-info" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+          <p class="heading">Hola, soy
+            <strong>Luis Alberto Arana Montaño</strong>
+          </p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
+            <span aria-hidden="true" class="white-text">&times;</span>
+          </button>
+        </div>
+      <!--Body-->
+      <div class="modal-body">
+          <div class="row">
+              <div class="col-3">
+                <p></p>
+                <p class="text-center">
+                  <img src="assets/img/avatar.jpg" class="img-thumbnail rounded-circle">
+                </p>
+              </div>
+              <div class="col-9">
+                <p>Soy un apasionado por el hardware y software de un ordenador y todo lo relacionado con la programación y diseño WEB; me considero una persona paciente, detallista, trabajadora e investigadora; estoy en constante práctica de las nuevas tecnologías, hasta encontrar mi propio estilo. Entre mis muchos intereses están: el cine, la música, el baile, las series; en mis tiempos libres veo tutoriales de nuevas tecnologías; aunque ahora mismo me estoy introduciendo al mundo WEB, considero que tengo la base para hacer volar mi imaginación y aprender nuevas tecnologías.
+                </p>
+                <p>
+                  <i class="fa fa-heart fa-2x text-danger"></i>
+                  Luis, Leo y Marc <strong>mi inspiración</strong>
+                </p>
+                <div class="text-center">
+                  <p class="sub__title">
+                    "En los momentos de crisis, sólo la imaginación es más importante que el conocimiento."
+                  </p>
+                  <span class="badge p-2">Albert Einstein</span>
+                </div>
+              </div>
+            </div>
+      </div>
+      <!--Footer-->
+      <div class="modal-footer flex-center">
+          <a type="button" mdbBtn color="primary" outline="true" class="waves-effect" mdbWavesEffect data-dismiss="modal"
+            (click)="frame.hide()">Cerrar</a>
+        </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
 <div class="container-fluid portada">
   <div class="container__title z-depth-5 rounded">
-    <h1 class="main__color black-shadow main__title pb-2">Luis Alberto Arana</h1>
-    <p class="white-text black-shadow">Técnico en Sistemas Microinformático y Redes/Diseñador WEB</p>
+    <h1 class="main__color black-shadow main__title pb-2">Luis Alberto</h1>
+    <p class="white-text black-shadow sub__title">Técnico en Sistemas Microinformático y Redes/Diseñador WEB</p>
+    <button type="button" mdbBtn color="primary" rounded="true" data-toggle="modal" data-target="#basicExample" (click)="frame.show()"
+  mdbWavesEffect>Saber más...</button>
   </div>
 </div>

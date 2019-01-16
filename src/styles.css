@@ -54,6 +54,10 @@ h6 {
   font-family: "lobster", Arial, Helvetica, sans-serif;
 }
 
+.sub__title {
+  font-size: .8em;
+}
+
 .main__color {
   color: var(--mainColor);
 }
@@ -87,4 +91,26 @@ h6 {
   left: 0;
   background: linear-gradient(90deg, var(--mainColor), #AD55C1);
   opacity: .5;
+}
+
+/*------------ Estilos responsive----------- */
+
+@media screen and (min-width:480px){
+  .main__title {
+    font-size: 3.2em;
+  }
+
+  .sub__title {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .main__title {
+    font-size: 4em;
+  }
+
+  .sub__title {
+    font-size: 1.5em;
+  }
 }

@@ -16,6 +16,7 @@ import { ProyectosComponent } from './views/proyectos/proyectos.component';
 import { ContactosComponent } from './views/contactos/contactos.component';
 import { Error404Component } from './views/error404/error404.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -4,4 +4,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 90%;
+}
+
+
+/*------------ Estilos responsive----------- */
+
+@media screen and (min-width:768px) {
+  .container__title {
+    width: 60%;
+  }
 }
