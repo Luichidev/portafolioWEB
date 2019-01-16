@@ -43,6 +43,9 @@ h6 {
   text-shadow: 5px 5px 10px var(--mainColor);
 }
 
+.text__shadow {
+  text-shadow: 3px 3px 3px #000;
+}
 .main__title {
   font-family: "lobster", Arial, Helvetica, sans-serif;
 }
