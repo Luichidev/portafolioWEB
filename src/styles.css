@@ -10,6 +10,7 @@
 
 :root {
   --mainColor: #4A86E8;
+  --secColor: #2E2E2E;
 }
 
 *,
@@ -57,29 +58,15 @@ h6 {
   color: var(--mainColor);
 }
 
+.mainBG__color {
+ background: var(--mainColor);
+}
+
 /* -----Estilos del navbar custom scroll --- */
 .top-nav-collapse {
-  background-color: #000 !important;
+  background-color: var(--secColor) !important;
 }
 
-/* -------------Estilos del banner------------- */
-.banner {
-  position: relative;
-}
-
-.banner::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, .7);
-  z-index: 10;
-  top: 0;
-}
-
-.banner__img {
-  object-fit: cover;
-}
 
 /* -------------Estilos de laportada------------- */
 .portada {
@@ -87,43 +74,17 @@ h6 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 50vh;
+  height: 100vh;
   margin: 0;
   position: relative;
 }
 .portada::before {
   content: "";
   width: 100%;
-  min-height: 50vh;
+  min-height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
   background: linear-gradient(90deg, var(--mainColor), #AD55C1);
   opacity: .5;
-}
-
-
-/* -------------Estilos responsive------------- */
-@media screen and (min-width:480px) {
-  .banner {
-    z-index: -10;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .banner {
-    margin-top: -250px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .banner {
-    margin-top: -300px;
-  }
-}
-
-@media screen and (min-width:1600px) {
-  .banner {
-    margin-top: -320px;
-  }
 }
