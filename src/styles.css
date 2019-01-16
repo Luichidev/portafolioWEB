@@ -39,15 +39,8 @@ h6 {
   margin: 0;
 }
 
-.container__grid {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(1fr);
-  grid-gap: 10px;
-}
-
-.black-shadow {
-  text-shadow: 5px 5px 10px black;
+.main__color-shadow {
+  text-shadow: 5px 5px 10px var(--mainColor);
 }
 
 .main__title {
@@ -64,6 +57,10 @@ h6 {
 
 .mainBG__color {
  background: var(--mainColor);
+}
+
+.mainBG__color-gradient {
+  background-image: linear-gradient(90deg, var(--mainColor), #AD55C1);
 }
 
 /* -----Estilos del navbar custom scroll --- */

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Aptitudes } from 'src/app/models/aptitudes';
 
 @Component({
   selector: 'app-aptitudes',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aptitudes.component.css']
 })
 export class AptitudesComponent implements OnInit {
+
+  aptitudes : any[] = Aptitudes
 
   constructor() { }
 
