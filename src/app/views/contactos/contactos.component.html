@@ -54,10 +54,13 @@
             <label for="mensaje" class="formulario__label">Mensaje:</label>
             <textarea formControlName="mensaje" id="mensaje" cols="20" rows="10" class="text__area" name="mensaje"></textarea>
           </div>
-          <div class="g-recaptcha mb-3" data-sitekey="6LeqDGUUAAAAAOtFJsZz2u1T_9ZurUAZv9OT2WtT"></div>
+          <div class="form-group">
+            <re-captcha formControlName="recaptchaReactive"
+            (resolved)="resolved($event)"></re-captcha>
+          </div>
           <div class="form-group md-form">
-            <mdb-checkbox [default]=true class="mb-3" formControlName="checkbox">Acepto los terminos, <a routerLink="/error404">Ver
-                los terminos</a> </mdb-checkbox>
+            <mdb-checkbox [default]=true class="mb-3" formControlName="checkbox">Acepto los términos y condiciones, <a routerLink="/error404">Ver
+                los términos</a> </mdb-checkbox>
           </div>
           <input [disabled]="!form.valid" class="btn btn-primary mx-auto d-block" type="submit" value="Enviar">
         </form>

@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Mensaje } from 'src/app/models/mensaje';
 import { EmailService } from 'src/app/services/emailService.service';
 
+
 @Component({
   selector: 'app-contactos',
   templateUrl: './contactos.component.html',
@@ -20,8 +21,7 @@ export class ContactosComponent implements OnInit {
     this.crearCampos()
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {  }
 
   crearCampos() {
     this.form = this.fb.group({
@@ -39,6 +39,7 @@ export class ContactosComponent implements OnInit {
         Validators.pattern('[0-9]{7,9}')
       ])],
       mensaje: '',
+      recaptchaReactive: ['', Validators.required],
       checkbox: ['', Validators.requiredTrue]
     })
   }
@@ -58,5 +59,9 @@ export class ContactosComponent implements OnInit {
       () => {
         console.log('Email enviado')
       })
+  }
+
+  resolved(captchaResponse: string) {
+    console.log(`Resolved captcha with response ${captchaResponse}`)
   }
 }
