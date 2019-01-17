@@ -1,38 +1,42 @@
-<div class="pt-4"></div>
-<h2 class="main__title pt-5 text-center main__color-shadow">Formación</h2>
-<div class="container pt-3 pb-3">
-  <div class="row">
-    <div class="animated bounceInLeft col-lg-4 col-md-6 col-sm-12 mb-4" *ngFor="let item of formacion">
-      <mdb-card cascade="true" narrower="true">
-        <!--Card image-->
-        <div class="view view-cascade overlay waves-light" mdbWavesEffect>
-          <mdb-card-img [src]="item.image"></mdb-card-img>
-          <a>
-            <div class="mask rgba-white-slight"></div>
-          </a>
-        </div>
-        <!--/Card image-->
-        <mdb-card-body cascade="true" class="text-center card__formacion">
-          <!--Card content-->
-          <h4 class="main__color sub__title">
-            <i class="fa fa-{{ item.icon }}"></i> {{ item.title }}</h4>
-          <!--Title-->
-          <p class="card-title">{{ item.sub_title }}</p>
-          <!--Text-->
-          <mdb-card-text>
-            <ul *ngFor="let conocimiento of item.skill" class="text-left">
-              <li>{{ conocimiento.uno }}</li>
-              <li>{{ conocimiento.dos }}</li>
-              <li>{{ conocimiento.tres }}</li>
-              <li>{{ conocimiento.cuatro }}</li>
-              <li>{{ conocimiento.cinco }}</li>
-              <li>{{ conocimiento.seis }}</li>
-            </ul>
-          </mdb-card-text>
-        </mdb-card-body>
-        <!--/.Card content-->
-      </mdb-card>
-      <!--/.Card-->
+<app-header></app-header>
+<section>
+  <div class="pt-4"></div>
+  <h2 class="main__title pt-5 text-center main__color-shadow">Formación</h2>
+  <div class="container pt-3 pb-3">
+    <div class="row">
+      <div class="animated bounceInLeft col-lg-4 col-md-6 col-sm-12 mb-4" *ngFor="let item of formacion">
+        <mdb-card cascade="true" narrower="true">
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img [src]="item.image"></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--/Card image-->
+          <mdb-card-body cascade="true" class="text-center card__formacion">
+            <!--Card content-->
+            <h4 class="main__color sub__title">
+              <i class="fa fa-{{ item.icon }}"></i> {{ item.title }}</h4>
+            <!--Title-->
+            <p class="card-title">{{ item.sub_title }}</p>
+            <!--Text-->
+            <mdb-card-text>
+              <ul *ngFor="let conocimiento of item.skill" class="text-left">
+                <li>{{ conocimiento.uno }}</li>
+                <li>{{ conocimiento.dos }}</li>
+                <li>{{ conocimiento.tres }}</li>
+                <li>{{ conocimiento.cuatro }}</li>
+                <li>{{ conocimiento.cinco }}</li>
+                <li>{{ conocimiento.seis }}</li>
+              </ul>
+            </mdb-card-text>
+          </mdb-card-body>
+          <!--/.Card content-->
+        </mdb-card>
+        <!--/.Card-->
+      </div>
     </div>
   </div>
-</div>
+</section>
+<app-footer></app-footer>

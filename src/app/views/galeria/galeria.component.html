@@ -1,35 +1,36 @@
-<div mdbModal #frame="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-notify modal-info modal-fluid" role="document">
-    <!--Content-->
-    <div class="modal-content">
-      <!--Header-->
-      <div class="modal-header">
-        <p class="heading lead">Galería de Imagenes</p>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
-          <span aria-hidden="true" class="white-text">&times;</span>
-        </button>
-      </div>
-
-      <!--Body-->
-      <div class="modal-body">
-        <div class="text-center">
-          <img [src]="image_modal" class="img-fluid animated rotateIn">
-          <p class="pt-2"> {{ image_description }} </p>
+<app-header></app-header>
+<section>
+  <div mdbModal #frame="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-notify modal-info modal-fluid" role="document">
+      <!--Content-->
+      <div class="modal-content">
+        <!--Header-->
+        <div class="modal-header">
+          <p class="heading lead">Galería de Imagenes</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
+            <span aria-hidden="true" class="white-text">&times;</span>
+          </button>
+        </div>
+        <!--Body-->
+        <div class="modal-body">
+          <div class="text-center">
+            <img [src]="image_modal" class="img-fluid animated rotateIn">
+            <p class="pt-2"> {{ image_description }} </p>
+          </div>
         </div>
       </div>
-    </div>
-    <!--/.Content-->
-  </div>
-</div>
-
-<div class="pt-4"></div>
-<h2 class="main__title pt-5 text-center main__color-shadow">Galería</h2>
-<div class="container pt-3 pb-3">
-  <div class="row">
-    <div class="col-lg-4 col-md-6 col-sm-12 view overlay zoom" *ngFor="let image of imagesBasic" (click)="onOpenImg(image.id)">
-      <img [src]="image.img" class="img-fluid img-thumbnail z-depth-3 m-2 cursor" (click)="frame.show()" (mouseover)="onOpen($event)">
+      <!--/.Content-->
     </div>
   </div>
-</div>
-
+  <div class="pt-4"></div>
+  <h2 class="main__title pt-5 text-center main__color-shadow">Galería</h2>
+  <div class="container pt-3 pb-3">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 view overlay zoom" *ngFor="let image of imagesBasic" (click)="onOpenImg(image.id)">
+        <img [src]="image.img" class="img-fluid img-thumbnail z-depth-3 m-2 cursor" (click)="frame.show()" (mouseover)="onOpen($event)">
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>
