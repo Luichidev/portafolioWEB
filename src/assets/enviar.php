@@ -28,7 +28,7 @@ if (isset($nombre) && !empty($nombre) && isset($correo) && !empty($correo) && is
   if (empty($mensaje)) $mensaje = "Mensaje generado automáticamente";
 
   $body = "
-      <h2>ASII</h2>
+      <h2 style='color:red;'>Portafolio WEB 3.0</h2>
       <p>Nombre: $nombre </p>
       <p>Correo: $correo </p>
       <p>Telefono: $telefono </p>
@@ -44,17 +44,8 @@ if (isset($nombre) && !empty($nombre) && isset($correo) && !empty($correo) && is
       $mail->SMTPAuth = true;
       $mail->Username = 'disconluis@hotmail.com';
       $mail->Password = 'vivaelamor';
-      $mail->SMTPSecure = 'ssl';
-      $mail->Port = 465;
-      /*
-      $mail->SMTPOptions = array(
-        'ssl' => array(
-            'verify_peer' => false,
-            'verify_peer_name' => false,
-            'allow_self_signed' => true
-            )
-        );
-      */
+      $mail->SMTPSecure = 'tls';
+      $mail->Port = 587;
 
       //Recipients
       $mail->setFrom($correo, $nombre);

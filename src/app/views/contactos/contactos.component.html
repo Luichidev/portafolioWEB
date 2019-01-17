@@ -4,9 +4,9 @@
   <h2 class="main__title pt-5 text-center main__color-shadow">Contáctame</h2>
   <div class="container pt-3 pb-3">
     <div class="row">
-      <div class="col-md-3 col-sm-12"></div>
-      <div class="animated bounceInRight col-md-6 col-sm-12">
-        <form [formGroup]="form" (submit)="onEnviar()">
+      <div class="col-md-3"></div>
+      <div class="animated bounceInRight col-md-6 z-depth-2">
+        <form [formGroup]="form" (submit)="onEnviar()" class="px-3">
           <div class="form-group md-form">
             <i class="fa fa-user-circle-o prefix"></i>
             <input mdbInputDirective type="text" class="form-control" formControlName="nombre" id="nombre" name="nombre">
@@ -62,7 +62,7 @@
           <input [disabled]="!form.valid" class="btn btn-primary mx-auto d-block" type="submit" value="Enviar">
         </form>
       </div>
-      <div class="col-md-3 col-sm-12"></div>
+      <div class="col-md-3"></div>
     </div>
   </div>
 </section>
