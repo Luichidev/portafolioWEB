@@ -30,13 +30,13 @@ if (isset($nombre) && !empty($nombre) && isset($correo) && !empty($correo) && is
   $body = "
       <div style='
       width: 400px;
-      background-color: #4A86E8;
-      color: #2D2D2D;
+      background-color: #752f85;
+      color: #FFFFFF;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 3px 3px 5px #000000;
       '>
-      <h1 style='text-align: center;'>Portafolio WEB 3.0</h1>
+      <h1 style='text-align: center; color:#4A86E8'>Portafolio WEB 3.0</h1>
       <p>Nombre: $nombre </p>
       <p>Correo: $correo </p>
       <p>Telefono: $telefono </p>
@@ -64,8 +64,8 @@ if (isset($nombre) && !empty($nombre) && isset($correo) && !empty($correo) && is
       //Content
       $mail->isHTML(true);
       $mail->Subject = 'Mensaje de contacto del Portafolio WEB 3.0';
-      $mail->Body    =  $body;
       $mail->CharSet = 'UTF-8';
+      $mail->Body    =  $body;
 
       $mail->send();
 
