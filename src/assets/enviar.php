@@ -40,12 +40,13 @@ if (isset($nombre) && !empty($nombre) && isset($correo) && !empty($correo) && is
       //Server settings
       $mail->SMTPDebug = 0;
       $mail->isSMTP();
-      $mail->Host = 'smtp.gmail.com';
+      $mail->Host = 'smtp.live.com';
       $mail->SMTPAuth = true;
-      $mail->Username = 'arsol.lu@gmail.com';
-      $mail->Password = 'hijas3cr3t@';
+      $mail->Username = 'disconluis@hotmail.com';
+      $mail->Password = 'vivaelamor';
       $mail->SMTPSecure = 'ssl';
       $mail->Port = 465;
+      /*
       $mail->SMTPOptions = array(
         'ssl' => array(
             'verify_peer' => false,
@@ -53,14 +54,15 @@ if (isset($nombre) && !empty($nombre) && isset($correo) && !empty($correo) && is
             'allow_self_signed' => true
             )
         );
+      */
 
       //Recipients
-      $mail->setFrom('arsol.lu@gmail.com', $nombre);
+      $mail->setFrom($correo, $nombre);
       $mail->addAddress('disconluis@gmail.com', 'Portafolio WEB 3.0');
 
       //Content
       $mail->isHTML(true);
-      $mail->Subject = 'Arana Servicios Integrales de Ingeniería';
+      $mail->Subject = 'Mensaje de contacto del Portafolio WEB 3.0';
       $mail->Body    =  $body;
       $mail->CharSet = 'UTF-8';
 
