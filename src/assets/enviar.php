@@ -28,11 +28,21 @@ if (isset($nombre) && !empty($nombre) && isset($correo) && !empty($correo) && is
   if (empty($mensaje)) $mensaje = "Mensaje generado automáticamente";
 
   $body = "
-      <h2 style='color:red;'>Portafolio WEB 3.0</h2>
+      <div style='
+      width: 400px;
+      background-color: #4A86E8;
+      color: #2D2D2D;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 3px 3px 5px #000000;
+      '>
+      <h1 style='text-align: center;'>Portafolio WEB 3.0</h1>
       <p>Nombre: $nombre </p>
       <p>Correo: $correo </p>
       <p>Telefono: $telefono </p>
-      <p>Mensaje: $mensaje</p>";
+      <p>Mensaje: $mensaje</p>
+      </div>
+  ";
 
   echo $body;
   $mail = new PHPMailer(true);
@@ -48,7 +58,7 @@ if (isset($nombre) && !empty($nombre) && isset($correo) && !empty($correo) && is
       $mail->Port = 587;
 
       //Recipients
-      $mail->setFrom($correo, $nombre);
+      $mail->setFrom('disconluis@hotmail.com', $nombre);
       $mail->addAddress('disconluis@gmail.com', 'Portafolio WEB 3.0');
 
       //Content
