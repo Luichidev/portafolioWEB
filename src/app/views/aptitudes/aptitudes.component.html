@@ -1,16 +1,16 @@
-<div class="pt-4"></div>
-<h2 class="main__title pt-5 text-center main__color-shadow">Aptitudes</h2>
-<div class="container pt-3 pb-3">
-  <div class="row">
-    <div class="animated bounceInUp col-lg-4 col-md-6 col-sm-12 mb-4" *ngFor="let aptitud of aptitudes">
-      <!--Card-->
-      <div class="card testimonial-card">
+<section>
+  <div class="pt-4"></div>
+  <h2 class="main__title pt-5 text-center main__color-shadow">Aptitudes</h2>
+  <div class="container pt-3 pb-3">
+    <div class="row">
+      <div class="animated bounceInUp col-lg-4 col-md-6 col-sm-12 mb-4" *ngFor="let aptitud of aptitudes">
+        <!--Card-->
+        <div class="card testimonial-card card__aptitudes">
           <!--Background color-->
           <div class="card-up mainBG__color-gradient">
           </div>
           <!--Avatar-->
-          <div class="avatar mx-auto white"><img [src]="aptitud.image"
-              alt="avatar mx-auto white" class="rounded-circle img-fluid">
+          <div class="avatar mx-auto white"><img [src]="aptitud.image" alt="avatar mx-auto white" class="rounded-circle img-fluid">
           </div>
           <div class="card-body">
             <!--Name-->
@@ -21,6 +21,8 @@
           </div>
         </div>
         <!--Card-->
+      </div>
     </div>
   </div>
-</div>
+</section>
+<app-footer></app-footer>

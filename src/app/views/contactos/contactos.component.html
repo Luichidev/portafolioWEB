@@ -1,3 +1,65 @@
-<p>
-  contactos works!
-</p>
+<div class="pt-4"></div>
+<h2 class="main__title pt-5 text-center main__color-shadow">Contáctame</h2>
+<div class="container pt-3 pb-3">
+  <div class="row">
+    <div class="col-md-3 col-sm-12"></div>
+    <div class="animated bounceInRight col-md-6 col-sm-12">
+      <form [formGroup]="form" (submit)="onEnviar()">
+        <div class="form-group md-form">
+          <i class="fa fa-user-circle-o prefix"></i>
+          <input mdbInputDirective type="text" class="form-control" formControlName="nombre" id="nombre" name="nombre">
+          <label for="nombre" class="formulario__label">Nombre:</label>
+          <div *ngIf="form.controls['nombre'].errors && form.controls['nombre'].dirty" class="text-danger">
+            <div *ngIf="form.controls['nombre'].errors.required">
+              <!-- * El Nombre es requerido -->
+            </div>
+            <div *ngIf="form.controls['nombre'].errors.minlength">
+              <!-- * El Nombre require mínimo 3 letras -->
+            </div>
+            <div *ngIf="form.controls['nombre'].errors.maxlength">
+              <!-- * El Nombre require un máximo de 15 letras -->
+            </div>
+          </div>
+        </div>
+        <div class="form-group md-form">
+          <i class="fa fa-envelope prefix"></i>
+          <input mdbInputDirective type="text" class="form-control" formControlName="correo" id="correo" name="correo">
+          <label for="correo" class="formulario__label">Correo:</label>
+          <div *ngIf="form.controls['correo'].errors && form.controls['correo'].dirty" class="text-danger">
+            <div *ngIf="form.controls['correo'].errors.required">
+              <!-- * El Campo es requerido -->
+            </div>
+            <div *ngIf="form.controls['correo'].errors.email">
+              <!-- * Escribe un E-mail valido -->
+            </div>
+          </div>
+        </div>
+        <div class="form-group md-form">
+          <i class="fa fa-phone-square prefix"></i>
+          <input mdbInputDirective type="tel" class="form-control" formControlName="telefono" id="telefono" pattern="[0-9]{9}"
+          name="telefono">
+          <label for="telefono" class="formulario__label">Teléfono:</label>
+          <div *ngIf="form.controls['telefono'].errors && form.controls['telefono'].dirty" class="text-danger">
+            <div *ngIf="form.controls['telefono'].errors.required">
+              <!-- * El Campo es requerido -->
+            </div>
+            <div *ngIf="form.controls['telefono'].errors.pattern">
+              <!-- * Pon un movil valido! -->
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mensaje" class="formulario__label">Mensaje:</label>
+          <textarea formControlName="mensaje" id="mensaje" cols="20" rows="10" class="text__area" name="mensaje"></textarea>
+        </div>
+        <div class="g-recaptcha mb-3" data-sitekey="6LeqDGUUAAAAAOtFJsZz2u1T_9ZurUAZv9OT2WtT"></div>
+        <div class="form-group md-form">
+          <mdb-checkbox [default]=true class="mb-3" formControlName="checkbox">Acepto los terminos, <a routerLink="/">Ver los terminos</a> </mdb-checkbox>
+        </div>
+        <input [disabled]="!form.valid"  class="btn btn-primary mx-auto d-block" type="submit" value="Enviar">
+      </form>
+    </div>
+    <div class="col-md-3 col-sm-12"></div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -30,5 +30,21 @@ export const Formacion = [
         seis: "Diseño y Publicación de páginas Web EMFOMollet-2018"
       }
     ]
+  },
+  {
+    title: "FORMACION",
+    sub_title: "Estudios Complementarios",
+    image: "assets/img/formacion.jpg",
+    icon: "code",
+    skill: [
+      {
+        uno: "Ofimática (Word, Excel, PowerPoint, Access)",
+        dos: "POO (Programación Orientada a Objetos) Lenguaje JAVA",
+        tres: "Ingeniería de Aplicaciones Multimedia y juegos - Instituto ECC Barcelona",
+        cuatro: "Castellano nativo",
+        cinco: "Ingles Técnico UAGRM(Universidad Autónoma Gabriel Rene Moreno)",
+        seis: "Primeros Auxilios - Cruz Roja | Bolivia"
+      }
+    ]
   }
 ]
