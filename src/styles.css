@@ -39,6 +39,15 @@ h6 {
   margin: 0;
 }
 
+.container__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+
 .main__color-shadow {
   text-shadow: 5px 5px 10px var(--mainColor);
 }
@@ -92,6 +101,26 @@ h6 {
   background: linear-gradient(90deg, var(--mainColor), #AD55C1);
   opacity: .5;
 }
+/* -------------Estilos del error404------------- */
+.error404 {
+  background: url(./assets/img/error404.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+.error404::before {
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, var(--mainColor), #AD55C1);
+  opacity: .5;
+}
 
 /*------------ Estilos responsive----------- */
 
@@ -112,6 +141,10 @@ h6 {
 
   .card__aptitudes {
     height: 450px;
+  }
+
+  .container__title {
+    width: 60%;
   }
 
   .main__title {
