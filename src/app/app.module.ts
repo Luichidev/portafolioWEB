@@ -20,6 +20,8 @@ import { EmailService } from "./services/emailService.service";
 import { RecaptchaModule } from "ng-recaptcha";
 import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
 import { RECAPTCHA_SETTINGS, RecaptchaSettings } from 'ng-recaptcha';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -43,7 +45,8 @@ import { RECAPTCHA_SETTINGS, RecaptchaSettings } from 'ng-recaptcha';
     ReactiveFormsModule,
     HttpClientModule,
     RecaptchaModule.forRoot(),
-    RecaptchaFormsModule
+    RecaptchaFormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [
