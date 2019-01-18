@@ -80,6 +80,14 @@ h6 {
   background-color: var(--secColor) !important;
 }
 
+/* -------------Estilos de los CARD proyectos------------- */
+.foto-cafe {
+  background-image: url('assets/img/cafe.jpg');
+}
+
+.foto-pizzeria {
+  background-image: url('assets/img/pizzeria.jpg');
+}
 
 /* -------------Estilos de laportada------------- */
 .portada {

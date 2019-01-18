@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Proyectos } from 'src/app/models/proyectos';
 
 @Component({
   selector: 'app-proyectos',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./proyectos.component.css']
 })
 export class ProyectosComponent implements OnInit {
+
+  proyectos: any[] = Proyectos
 
   constructor() { }
 
