@@ -1,11 +1,13 @@
 @font-face {
   font-family: "merry";
-  src: url("assets/fonts/Merriweather/Merriweather-Regular.ttf");
+  font-display: auto;
+  src: local('merry') url("assets/fonts/Merriweather/Merriweather-Regular.ttf") format('ttf');
 }
 
 @font-face {
   font-family: "lobster";
-  src: url("assets/fonts/Lobster/Lobster-Regular.ttf");
+  font-display: auto;
+  src: local('lobster') url("assets/fonts/Lobster/Lobster-Regular.ttf") format('ttf');
 }
 
 :root {
