@@ -9,7 +9,17 @@
           "/favicon.ico",
           "/index.html",
           "/*.css",
-          "/*.js"
+          "/*.js",
+          "/*.png",
+          "/*.svg",
+          "/*.ico",
+          "/*.woff",
+          "/*.woff2",
+          "/*.ttf"
+
+        ],
+        "urls": [
+          "https://www.google.com/recaptcha/api.js"
         ]
       }
     }, {
@@ -18,8 +28,23 @@
       "updateMode": "prefetch",
       "resources": {
         "files": [
-          "/assets/**"
+          "/assets/**",
+          "/assets/**/**"
         ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "web",
+      "urls": [
+        "https://luisalberto.ml"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 20,
+        "maxAge": "1h",
+        "timeout": "30s"
       }
     }
   ]
