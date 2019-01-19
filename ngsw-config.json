@@ -43,7 +43,7 @@
       "cacheConfig": {
         "strategy": "freshness",
         "maxSize": 20,
-        "maxAge": "1h",
+        "maxAge": "8700h",
         "timeout": "30s"
       }
     }
