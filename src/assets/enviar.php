@@ -29,7 +29,7 @@ if (isset($nombre) && !empty($nombre) && isset($correo) && !empty($correo) && is
 
   $body = "
       <div style='
-      width: 400px;
+      width: 350px;
       background-color: #752f85;
       color: #FFFFFF;
       padding: 20px;
