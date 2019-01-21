@@ -15,4 +15,10 @@ export class ProyectosComponent implements OnInit {
   ngOnInit() {
   }
 
+  bg(image: string) {
+    return {
+      'background-image': 'url('+ image +')'
+    }
+  }
+
 }

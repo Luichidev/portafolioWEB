@@ -7,7 +7,7 @@
       <div class="col-md-6 col-sm-12"
       *ngFor="let proyecto of proyectos">
         <!-- Card -->
-        <div class="card card-image mb-3 foto-{{proyecto.image}}">
+        <div class="card card-image mb-3" [ngStyle]="bg(proyecto.image)">
           <!-- Content -->
           <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
             <div>
