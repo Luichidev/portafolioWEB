@@ -10,7 +10,7 @@
           <div class="form-group md-form">
             <i class="fa fa-user-circle-o prefix"></i>
             <input mdbInputDirective type="text" class="form-control" formControlName="nombre" id="nombre" name="nombre">
-            <label for="nombre" class="formulario__label">Nombre:</label>
+            <label for="nombre">Nombre:</label>
             <div *ngIf="form.controls['nombre'].errors && form.controls['nombre'].dirty" class="text-danger">
               <div *ngIf="form.controls['nombre'].errors.required">
                 <!-- * El Nombre es requerido -->
@@ -26,7 +26,7 @@
           <div class="form-group md-form">
             <i class="fa fa-envelope prefix"></i>
             <input mdbInputDirective type="text" class="form-control" formControlName="correo" id="correo" name="correo">
-            <label for="correo" class="formulario__label">Correo:</label>
+            <label for="correo">Correo:</label>
             <div *ngIf="form.controls['correo'].errors && form.controls['correo'].dirty" class="text-danger">
               <div *ngIf="form.controls['correo'].errors.required">
                 <!-- * El Campo es requerido -->
@@ -40,7 +40,7 @@
             <i class="fa fa-phone-square prefix"></i>
             <input mdbInputDirective type="tel" class="form-control" formControlName="telefono" id="telefono" pattern="[0-9]{9}"
               name="telefono">
-            <label for="telefono" class="formulario__label">Teléfono:</label>
+            <label for="telefono">Teléfono:</label>
             <div *ngIf="form.controls['telefono'].errors && form.controls['telefono'].dirty" class="text-danger">
               <div *ngIf="form.controls['telefono'].errors.required">
                 <!-- * El Campo es requerido -->
@@ -50,9 +50,11 @@
               </div>
             </div>
           </div>
-          <div class="form-group">
-            <label for="mensaje" class="formulario__label">Mensaje:</label>
-            <textarea formControlName="mensaje" id="mensaje" cols="20" rows="10" class="text__area" name="mensaje"></textarea>
+          <div class="form-group md-form">
+            <textarea type="text" id="mensaje" class="form-control md-textarea" rows="3"
+            formControlName="mensaje"
+            mdbInputDirective></textarea>
+            <label for="mensaje">Tú Mensaje:</label>
           </div>
           <div class="form-group">
             <re-captcha formControlName="recaptchaReactive"
