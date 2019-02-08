@@ -17,7 +17,7 @@ export const Proyectos = [
     title: 'Pizzería ÑamÑam',
     image: 'assets/img/pizzeria.jpg',
     description: 'Diseño, publicación y desarrollo de la pàgina web para esta pizzería, con el potente FrameWork Angular 7, utilizando el patron de diseño MVC (Modelo, Vista, Controlador)',
-    url: 'https://pizzeriafamiliarñamñam.ml',
+    url: 'https://pizzeriafamiliarñamñam.com',
     btn_icon: 'clone',
     btn_txt: 'VER PROYECTO'
   }
