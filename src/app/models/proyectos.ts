@@ -20,5 +20,27 @@ export const Proyectos = [
     url: 'https://pizzeriafamiliarñamñam.com',
     btn_icon: 'clone',
     btn_txt: 'VER PROYECTO'
+  },
+  {
+    color: 'blue',
+    icon: 'code',
+    icon_title: 'Development & Debugging',
+    title: 'Barco de Alquiler',
+    image: 'assets/img/boat.png',
+    description: 'Debugging de la web al añadir nuevas funcionalidades a la página web, como nuevos barco de https://www.booking-manager.com/, utilizando PHP 7 y ZURB Foundation 6.3.1.',
+    url: 'https://barcodealquiler.com',
+    btn_icon: 'clone',
+    btn_txt: 'VER PROYECTO'
+  },
+  {
+    color: 'green',
+    icon: 'code',
+    icon_title: 'Development & Debugging',
+    title: 'Onboard Yacht Services',
+    image: 'assets/img/obys.jpg',
+    description: 'Se añadió a la WEB www.barcodealquiler.com todos los servicios de onboardyachtservices al manage, utilizando PHP 7, PDO y ZURB Foundation 6.3.1.',
+    url: 'http://www.onboardyachtservices.com/',
+    btn_icon: 'clone',
+    btn_txt: 'VER PROYECTO'
   }
 ]
