@@ -1,16 +1,16 @@
 export const ImagesBasic = [
   {
-    img: "assets/img/galeria1.JPG",
+    img: "assets/img/galeria1.jpg",
     id: "1",
     description: "Realizando un testing a las Memorias RAM."
   },
   {
-    img: "assets/img/galeria2.JPG",
+    img: "assets/img/galeria2.jpg",
     id: "2",
     description: "Realizando un testing de tarjetas gráficas."
   },
   {
-    img: "assets/img/galeria3.JPG",
+    img: "assets/img/galeria3.jpg",
     id: "3",
     description: "Realizando un testing de una Placa Base."
   },
@@ -25,7 +25,7 @@ export const ImagesBasic = [
     description: 'Lugar de trabajo (Montaje, Configuración y Testing de Ordenadores)'
   },
   {
-    img: "assets/img/galeria6.JPG",
+    img: "assets/img/galeria6.jpg",
     id: "6",
     description: 'Limpieza y formateo de Discos Duros'
   }
