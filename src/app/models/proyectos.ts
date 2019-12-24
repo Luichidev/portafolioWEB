@@ -42,5 +42,27 @@ export const Proyectos = [
     url: 'http://www.onboardyachtservices.com/',
     btn_icon: 'clone',
     btn_txt: 'VER PROYECTO'
+  },
+  {
+    color: 'yellow',
+    icon: 'code',
+    icon_title: 'Development & Debugging',
+    title: 'CRM Metro-Electrónica',
+    image: 'assets/img/metro.jpg',
+    description: 'Se implemento todos los servicios y funcionalidades para que este proyecto administre y organice la empresa, desde facturación, reparaciones y control de stocks.',
+    url: 'http://metro.host20.net/',
+    btn_icon: 'clone',
+    btn_txt: 'VER PROYECTO'
+  },
+  {
+    color: 'pink',
+    icon: 'code',
+    icon_title: 'Development & Debugging',
+    title: 'Sistema de Monitorización y Alertas',
+    image: 'assets/img/simona.jpg',
+    description: 'SIMONA es una sistema de monitorización y alertas, he desarrollado todo el frontEnd del sistema y parte del backEnd.',
+    url: 'http://simona.land/',
+    btn_icon: 'clone',
+    btn_txt: 'VER PROYECTO'
   }
 ]
